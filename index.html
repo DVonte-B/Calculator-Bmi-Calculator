@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+
+    <div id="wrapper">
+        <h1 class="title">Calculator</h1>
+        <input id="myDisplay" readonly/>
+             <div id="button-wrapper">
+                <button onclick="appendToDisplay('+')" class="special-keys">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="special-keys">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="special-keys">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="special-keys">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="clearDisplay()" class="special-keys">AC</button>
+                <button onclick="calculateDisplay()">=</button>
+            </div>
+    </div>
+    <div id="bmi-wrapper">
+        <h1 class="bmi-title">BMI Calculator</h1>
+        <label for="height">Height (in) </label><br>
+        <input id="height" type="number"/><br>
+        <label for="weight">Weight (lbs)</label><br>
+        <input id="weight" type="number"/><br>
+        <div class="bmi-btn-wrapper">
+            <button id='bmi-submit' onclick="calculateBMI()" >Enter</button>
+            <button id="bmi-clear" onclick="clearBMI()">Clear</button>
+        </div>
+        <h2 id="your-bmi"></h2>
+        <p id="message"></p> 
+    </div>
+
+    <script src="calc.js"></script>
+    
+</body>
+</html>

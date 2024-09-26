@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#wrapper {
+    font-family: arial;
+    background: linear-gradient(100deg, rgba(255, 250, 147, 1), rgba(91, 168, 255, 1));
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.title {
+   display: flex;
+   justify-content: center;
+   font-size: 2.25rem;
+}
+
+#myDisplay {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border: 1px solid purple;
+    width: 86%;
+}
+
+#myDisplay:focus {
+    outline: none;
+}
+
+#button-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(167,231,255);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 2, 18);
+}
+
+button:active {
+    background-color: blue;
+}
+
+
+
+
+
+/* bmi section */
+
+
+#bmi-wrapper {
+    font-family: arial;
+    background: linear-gradient(100deg, rgba(255, 250, 147, 1), rgba(91, 168, 255, 1));
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.bmi-title {
+    display: flex;
+    justify-content: center;
+}
+
+#bmi-wrapper >  {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+#your-bmi {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+#height {
+    margin: auto;
+    display: block;
+    padding: 2px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid purple;
+}
+
+#weight {
+    margin: auto;
+    display: block;
+    padding: 2px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid purple;
+}
+
+.bmi-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+#bmi-submit {
+    width: 55px;
+    height: 25px;
+    font-size: 1rem;
+}
+
+#bmi-clear {
+    width: 51px;
+    height: 25px;
+    font-size: 1rem;
+}
